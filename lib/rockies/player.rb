@@ -1,3 +1,0 @@
-class Rockies::Player
-
-end
