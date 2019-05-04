@@ -1,0 +1,3 @@
+class Rockies::Scraper
+
+end
