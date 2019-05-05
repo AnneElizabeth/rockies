@@ -4,8 +4,8 @@ class Rockies::Ballplayer
 
   @@all = []
 
-  def initialize(name)
-    @name = name
+  def initialize(name, url, jersey_no, bat_throw_position, height, weight, dob)
+    @name = name.strip
     @url = url
     @jersey_no = jersey_no
     @bat_throw_position = bat_throw_position
@@ -19,4 +19,6 @@ class Rockies::Ballplayer
   def self.all
     @@all
   end
+
+
 end

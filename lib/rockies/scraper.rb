@@ -12,7 +12,7 @@ class Rockies::Scraper
       height = ballplayer.css("td.dg-height").text
       weight = ballplayer.css("td.dg-weight").text
       dob = ballplayer.css("td.dg-date_of_birth").text
-      Rockies::Ballplayer.new(name)
+      Rockies::Ballplayer.new(name, url, jersey_no, bat_throw_position, height, weight, dob)
     end
   end
 end
