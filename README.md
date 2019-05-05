@@ -1,8 +1,6 @@
 # Rockies
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rockies`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+"The Rockies gem lists the current roster of pitchers playing for the Colorado Rockies and gives the user an option to retrieve more information about them."
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The program will open with a list of current pitchers playing for the Colorado Rockies. Enter the number next to the name of the pitcher you'd like to know more about. You will see new information about the pitcher, including his jersey number, bat/throw position, height, weight, and birthdate. You may then enter another number to find out more about another pitcher, enter 'list' to see the list of pitchers, or enter 'exit' to leave the program.
 
 ## Development
 
