@@ -4,7 +4,6 @@ class Rockies::CLI
     Rockies::Scraper.new.scrape_roster
     list_roster
     menu
-    goodbye
   end
 
   def list_roster
@@ -27,14 +26,11 @@ class Rockies::CLI
           puts "And more about this pitcher"
         when "list"
           list_roster
+        when "exit"
+          puts "Enjoy the baseball season! Go Rockies!"
         else
           puts "Whoops. That's an invalid entry. Please try again."
        end
      end
   end
-
-  def goodbye
-    puts "Enjoy the baseball season! Go Rockies!"
-  end
-
 end
