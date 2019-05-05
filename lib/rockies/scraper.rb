@@ -4,16 +4,15 @@ class Rockies::Scraper
     doc = Nokogiri::HTML(html)
 
     table = doc.at("table.roster_table")
-
-    table.css("tbody tr").each do |player|
-      name = player.css("td.dg-name_display_first_last").text
-      url = player.css("a").attribute("href").value
-      jersey_no = player.css("td.dg-jersey_number").text
-      bat_throw_position = player.css("td.dg-bats_throws").text
-      height = player.css("td.dg-height").text
-      weight = player.css("td.dg-weight").text
-      height = player.css("td.dg-height").text
-      dob = player.css("td.dg-date_of_birth").text
+    table.css("tbody tr").each do |ballplayer|
+      name = ballplayer.css("td.dg-name_display_first_last").text
+      url = ballplayer.css("a").attribute("href").value
+      jersey_no = ballplayer.css("td.dg-jersey_number").text
+      bat_throw_position = ballplayer.css("td.dg-bats_throws").text
+      height = ballplayer.css("td.dg-height").text
+      weight = ballplayer.css("td.dg-weight").text
+      dob = ballplayer.css("td.dg-date_of_birth").text
+      Rockies::Ballplayer.new(name)
     end
   end
 end
