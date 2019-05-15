@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Anne Edmondson'"]
   spec.email         = ["'edmondson.anne@gmail.com'"]
 
-  spec.summary       = "A gem that scrapes the Colorado Rockies 2019 active roster."
-  spec.description   = "A gem that scrapes the Colorado Rockies 2019 active roster."
+  spec.summary       = "A gem that scrapes the Colorado Rockies 2019 active pitching roster."
+  spec.description   = "A gem that scrapes the Colorado Rockies 2019 active pitching roster."
   spec.homepage      = "https://github.com/AnneElizabeth/rockies"
   spec.license       = "MIT"
 

@@ -2,5 +2,4 @@
 
 require_relative '../lib/environment'
 
-#Rockies::CLI.new.start
 Rockies::CLI.new.start
